@@ -94,4 +94,12 @@ public class StudentManager extends Student {
         return listStudent[index];
 
     }
+    public boolean check(int id){
+        for (int i = 0; i < listStudent.length; i++) {
+            if (listStudent[i].getId() == id){
+                return true;
+            }
+        }
+        return false;
+    }
 }
